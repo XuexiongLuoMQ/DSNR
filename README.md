@@ -16,27 +16,26 @@ This a Tensorflow implementation of the DSNR algorithm, which learns a low-dimen
     1.cora.edgelist
     2.cora.features (node original semantic feature vector representations: attributes of nodes have been processed as TFIDF vector)
     3.cora.svd (node original semantic feature vector representations: TFIDF matrix on node attributes is decomposed by SVD, and then      the left singular matrix obtained is taken as the input feature)
+    4.cora.sequence (it has been processed by truncated random walk)
     In this paper, we select node TFIDF feature vector as the original semantic feature of nodes
 ## Basic Usage
 ### Input Data
 For node classification, each dataset contain 4 files: edgelist,feature, labels and node sequence
 #### cora.edgelist: each line contains two connected nodes
-      node_1 node_2
-      node_2 node_2
+    node_1 node_2
+    node_2 node_2
       ...
-### cora,feature: this file has n+1 lines.
-        the first line has the following format:
-	node_number feature_dimension
-	the next n lines are as follows:(each node per line ordered by node id)
-	(for node_1) feature_1 feature_2...feature_n
-	(for node_1) feature_1 feature_2...feature_n
-	...
+### cora.feature: this file has n lines.
+    the n lines are as follows:(each node per line ordered by node id)
+    (for node_1) feature_1 feature_2...feature_n
+    (for node_1) feature_1 feature_2...feature_n
+    ...
 ### cora.label: each line represents a node and its class label.
-        node_1 label_1
-	node_1 label_1
-	...
+    node_1 label_1
+    node_1 label_1
+    ...
 ### cora.sequence: has been processed by truncated random walk
-        node_1 node_2 node_2...node_10
+    node_1 node_2 node_2...node_10
 ## output: the Micro-F1 for node classification
 ## Run 
     python main.py
