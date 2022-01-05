@@ -4,7 +4,7 @@ This a Tensorflow implementation of the DSNR algorithm, which learns a low-dimen
 ## Motivation 
 ![](https://img-blog.csdnimg.cn/20200820162428671.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b3h1ZXhpb25n,size_16,color_FFFFFF,t_70)
 
-An example of node with implicit semantic information. All Bob’close friends are explorer. Thus, Bob should also like expedition.The same goes for Tom. Furthermore, Bob and Tom have the similar implicit semantic information, but they are far apart in the network. However, their node representations in the latent space should be similar.
+An example of nodes with implicit semantic information. All Bob’ close friends are explorers. Thus, Bob is very likely to share their interests. The same goes for Tom. Furthermore, though being far apart in the network, Bob and Tom may have the similar implicit semantic information, and their node representations are very likely to be similar.
 
 ## The framework of DSNR
 ![](https://img-blog.csdnimg.cn/20200820162445944.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b3h1ZXhpb25n,size_16,color_FFFFFF,t_70)
