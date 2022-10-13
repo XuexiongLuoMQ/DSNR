@@ -51,7 +51,7 @@ For node classification, each dataset contain 4 files: edgelist,feature, labels 
     python main.py
 ## The result of node classification
 ![](https://img-blog.csdnimg.cn/20200820162506435.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b3h1ZXhpb25n,size_16,color_FFFFFF,t_70)
-#### If you find this code useful for your research, please cite our paper:
+#### If you find that this code is useful for your research, please cite our paper:
 	@inproceedings{luo2020deep,
   	title={Deep Semantic Network Representation},
   	author={Luo, Xuexiong and Wu, Jia and Zhou, Chuan and Zhang, Xiankun and Wang, Yuan},
